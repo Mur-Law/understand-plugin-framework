@@ -14,7 +14,7 @@ import android.content.pm.PackageManager;
 public final class HookHelper {
     //这个测试在安卓10到13还可以使用
      public static void hookActivityManager_android10() {
-try {
+        try {
             //取消 反射限制 
             Class<?> vmRuntimeClass = Class.forName("dalvik.system.VMRuntime");
             Method getRuntimeMethod = vmRuntimeClass.getDeclaredMethod("getRuntime");
