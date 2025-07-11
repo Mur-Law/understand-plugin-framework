@@ -12,8 +12,8 @@ import android.content.pm.PackageManager;
  * @date 16/3/7
  */
 public final class HookHelper {
-
-    public static void hookActivityManager() {
+    //这个获取实例方法在安卓10到13已经 用不了了
+    public static void hookActivityManager_android4() {  
         try {
             Class<?> activityManagerNativeClass = Class.forName("android.app.ActivityManagerNative");
 
